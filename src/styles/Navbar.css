@@ -39,9 +39,44 @@
     cursor: pointer;
 }
 
+.navbar #open {
+    padding-left: 8px;
+}
+
+.navbar #open img {
+    display: none;
+}
+
+.navbar #close img {
+    display: inherit;
+}
+
+.navbar #open .hiddenLinks {
+    display: inherit;
+    margin-left: 30px;
+}
+
+.navbar #close .hiddenLinks {
+    display: none;
+}
+
+.navbar #open a {
+    width: 70px;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 980px) {
+    .navbar .rightSide a {
+        width: 70px;
+    }
+    .navbar .leftSide {
+        padding-left: 50px;
+    }
+}
+
 .navbar .rightSide svg{
     font-size: 40px;
-}
+} 
 
 @media only screen and (max-width: 680px){
     .navbar .rightSide a {
@@ -60,6 +95,9 @@
 
 @media only screen and (min-width: 680px){
     .navbar .rightSide button {
+        display: none;
+    }
+    .hiddenLinks {
         display: none;
     }
 }
