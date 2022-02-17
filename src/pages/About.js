@@ -9,7 +9,7 @@ function About() {
         style={{ backgroundImage: `url(${Cocktail})`}}></div>
         <div className="aboutBottom">
             <h1> ABOUT US</h1>
-            <p>This system will be designed in a such a way
+            <p>This system is designed in a such a way
                  that people will be order to press their orders
                   on the website and then the restaurant 
                   will get notified of the order and then ask the customer 
