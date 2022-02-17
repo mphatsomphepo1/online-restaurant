@@ -5,9 +5,8 @@ import "../styles/Home.css";
 
 function Home() {
   return (
-    <div className="home">
-      <div className="headerContainer"
-      style={{ backgroundImage: `url(${BannerImage})`}}>
+    <div className="home" style={{ backgroundImage: `url(${BannerImage})`}}>
+      <div className="headerContainer">
         <h1> Online Restaurant Website </h1>
         <p> TASTE THE GOODNESS OF YUMMY FOOD </p>
         <Link to="/menu">

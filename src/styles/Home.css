@@ -41,7 +41,7 @@
 
 .headerContainer button:hover {
     background-color: #07090a;
-    cursor: painter;
+    cursor: pointer;
     transition: 0.3s ease-in;
 }
 
