@@ -69,7 +69,8 @@ form label {
 
 form button {
     margin-top:  40px;
-    width: 140px;
+    margin-bottom:  40px;
+    width: 160px;
     height: 40px;
     border: none;
     background-color: #121619;
