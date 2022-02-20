@@ -1,4 +1,5 @@
 import React from 'react'
+import LogoRestaurant from "@material-ui/icons/Restaurant";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
@@ -13,7 +14,8 @@ function Footer() {
       <div class="row container">
         <div class="col">
           <div class="logo d-flex">
-            <img src="../assets/logo.png" alt="logo" />
+            {/* <img src="../assets/logo.png" alt="logo" /> */}
+            <h1> <LogoRestaurant/> Online Restaurant</h1>
           </div>
           {/* <p>
             Retail food delivery is a courier service in which a restaurant,

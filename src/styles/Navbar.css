@@ -17,6 +17,9 @@
 .navbar .leftSide img{
     width: 70px;
 }
+.navbar .leftSide h1 {
+    color: white;
+}
 
 .navbar .rightSide{
     flex: 50%;

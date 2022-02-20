@@ -9,9 +9,7 @@ function Home() {
       <div className="headerContainer">
         <h1> Online Restaurant Website </h1>
         <p> TASTE THE GOODNESS OF YUMMY FOOD </p>
-        <Link to="/signin">
-          <button>SIGN IN</button>
-        </Link>
+        
         <Link to="/menu"> 
         <button>ORDER NOW</button>
         </Link>
