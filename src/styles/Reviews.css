@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.testimonials {
+    padding: 10rem 0 10rem;
+    background-color: var(--grey-color-1);
+  }
+  .testimonials .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 10rem;
+    align-items: flex-start;
+  }
+  .testimonials .row .card {
+    border-right: 2px solid #eaeaea;
+  }
+  .testimonials .row .card.active {
+    border-color: var(--primary-color);
+  }
+  .testimonials .row .card.active .d-flex {
+    background-color: var(--grey-color);
+    box-shadow: var(--box-shadow);
+  }
+  .testimonials .row .card .d-flex {
+    border-radius: 1rem;
+    width: 85%;
+    padding: 1.5rem;
+    cursor: pointer;
+  }
+  .testimonials .row .card .d-flex:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  .testimonials .row .card .image {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    overflow: visible;
+    margin-right: 3rem;
+  }
+  .testimonials .row .card .image img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .testimonials .row .card h4 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: black;
+  }
+  .testimonials .row .card span {
+    font-size: 1.5rem;
+  }
+  .testimonials .row .col:last-child {
+    position: relative;
+    overflow: visible;
+    height: 44rem;
+  }
+  .testimonials .row .col:last-child h2 {
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+  }
+  .testimonials .row .col:last-child h2 span {
+    color: var(--primary-color);
+  }
+  .testimonials .row .col:last-child .testimonial {
+    position: absolute;
+    bottom: -80%;
+    transform: translateY(-30%);
+    transition: 0.5s;
+
+  }
+  .testimonials .row .col:last-child .testimonial.active {
+    bottom: 0%;
+  }
+  .testimonials .row .col:last-child .testimonial .d-flex {
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey-color);
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .testimonials .row .col:last-child .testimonial .d-flex div:first-child {
+    border-left: 2px solid var(--primary-color);
+    padding-left: 1rem;
+  }
+  .testimonials .row .col:last-child .testimonial .d-flex div:first-child h4 {
+    font-size: 2rem;
+    color: black;
+  }
+  .testimonials .row .col:last-child .testimonial .d-flex div:first-child span {
+    font-size: 1.5rem;
+  }
+  .testimonials .row .col:last-child .testimonial .d-flex .rating span {
+    color: var(--deep-yellow);
+  }
+  
+  @media (max-width: 1200px) {
+    .testimonials .row {
+      gap: 5rem 0;
+    }
+    .testimonials .row .col:last-child h2 {
+      font-size: 3.5rem;
+    }
+    .testimonials .row .col:last-child .testimonial {
+      bottom: -90%;
+      transform: translateY(-10%);
+    }
+    .testimonials .row .card {
+      border: none;
+    }
+  }
+  @media (max-width: 996px) {
+    .testimonials .row .col:last-child h2 {
+      font-size: 3.5rem;
+    }
+    .testimonials .row .col:last-child .testimonial {
+      transform: translateY(0%);
+    }
+  }
+  @media (max-width: 800px) {
+    .testimonials .row {
+      grid-template-columns: 1fr;
+    }
+    .testimonials .row .card .d-flex {
+      width: 100%;
+    }
+  }
+  @media (max-width: 567px) {
+    .testimonials .row .col:last-child h2 {
+      font-size: 2.5rem;
+    }
+  }

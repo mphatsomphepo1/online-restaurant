@@ -4,6 +4,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import {Link} from "react-router-dom";
 import "../styles/Footer.css";
 //import YoutubeIcon from "@material-ui/icons/Youtube";
 
@@ -32,30 +33,30 @@ function Footer() {
         <div class="col">
           <div>
             <h4>Company</h4>
-            <a href="">About Us</a>
-            <a href="">Blog</a>
-            <a href="">All Products</a>
-            <a href="">Locations Map</a>
+            <Link to="/about">About Us</Link>
+            <Link to="/">Blog</Link>
+            <Link to="/menu">All Products</Link>
+            <Link to="/">Locations Map</Link>
           </div>
           <div>
             <h4>Services</h4>
-            <a href="">Order tracking</a>
-            <a href="">Wish List</a>
-            <a href="">My account</a>
-            <a href="">Terms & Conditions</a>
+            <Link to="/">Order tracking</Link>
+            <Link to="/">Wish </Link>
+            <Link to="/">My account</Link>
+            <Link to="/">Terms & Conditions</Link>
           </div>
           <div>
             <h4>Support</h4>
-            <a href="">FAQ</a>
-            <a href="">Policy </a>
-            <a href="">Business</a>
-            <a href="">Support Carrer</a>
+            <Link to="/contact">FAQ</Link>
+            <Link to="/">Policy </Link>
+            <Link to="/">Business</Link>
+            <Link to="/">Support Carrer</Link>
           </div>
           <div>
             <h4>Contact</h4>
-            <a href="">WhatsApp</a>
-            <a href="">Support 24 </a>
-            <a href="">Quick Chat</a>
+            <Link to="/">WhatsApp</Link>
+            <Link to="/">Support 24 </Link>
+            <Link to="/">Quick Chat</Link>
           </div>
         </div>
         

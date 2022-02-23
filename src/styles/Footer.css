@@ -13,9 +13,12 @@
 }
 .footer .socialMedia svg {
     color: white;
-    margin: 20px;
+    /* margin: 20px; */
     font-size: 50px;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
 }
 
 .footer p {
