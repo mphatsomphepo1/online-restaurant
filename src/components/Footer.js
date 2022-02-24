@@ -1,73 +1,49 @@
-import React from 'react'
-import LogoRestaurant from "@material-ui/icons/Restaurant";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import {Link} from "react-router-dom";
-import "../styles/Footer.css";
-//import YoutubeIcon from "@material-ui/icons/Youtube";
+import React from 'react';
+import '../styles/Footer.css';
 
 function Footer() {
-  return (
-      <>
-    <footer class="footer">
-      <div class="row container">
-        <div class="col">
-          <div class="logo d-flex">
-            {/* <img src="../assets/logo.png" alt="logo" /> */}
-            <h1> <LogoRestaurant/> Online Restaurant</h1>
-          </div>
-          {/* <p>
-            Retail food delivery is a courier service in which a restaurant,
-            store, or independent food-delivery
-          </p> */}
-          {/* <div class="icons d-flex">
-            <div class="icon d-flex">
-              <i class="bx bxl-facebook"></i>
-            </div>
-            <div class="icon d-flex"><i class="bx bxl-twitter"></i></div>
-            <div class="icon d-flex"><i class="bx bxl-linkedin"></i></div>
-          </div> */}
-        </div>
-        <div class="col">
-          <div>
-            <h4>Company</h4>
-            <Link to="/about">About Us</Link>
-            <Link to="/">Blog</Link>
-            <Link to="/menu">All Products</Link>
-            <Link to="/">Locations Map</Link>
-          </div>
-          <div>
-            <h4>Services</h4>
-            <Link to="/">Order tracking</Link>
-            <Link to="/">Wish </Link>
-            <Link to="/">My account</Link>
-            <Link to="/">Terms & Conditions</Link>
-          </div>
-          <div>
-            <h4>Support</h4>
-            <Link to="/contact">FAQ</Link>
-            <Link to="/">Policy </Link>
-            <Link to="/">Business</Link>
-            <Link to="/">Support Carrer</Link>
-          </div>
-          <div>
-            <h4>Contact</h4>
-            <Link to="/">WhatsApp</Link>
-            <Link to="/">Support 24 </Link>
-            <Link to="/">Quick Chat</Link>
-          </div>
-        </div>
-        
-      </div>
-      <div className="socialMedia">
-            <InstagramIcon/> <TwitterIcon/> <FacebookIcon/> <LinkedInIcon/>
-        </div>
-        <p> &copy; 2022 onlinerestaurant.com</p>
-    </footer>
-     </>
-  );
-}
+    return (
+        <div style={{marginTop:"180px",height:"420px"}}>
+	    <footer className="footer_widget" style={{height:"420px"}}>
+		<ul>
+			<div className="location">
+				<h4>Location</h4>
+				<ul>
+					<li>Umodzi</li>
+					<li>Chirunga</li>
+					<li>Kamuzu</li>
+          <li>Chikanda</li>
+					<img src=""/>
+				</ul>
+			</div>
+			<div className="company">
+				<h4>Company</h4>
+				<ul id="comp_list">
+					<a id="comp_item1" href="#Our_Story"><li>Our Story</li></a>
+					<a id="comp_item2" href="#Mission"><li>Mission</li></a>
+					<a id="comp_item3" href="#Journal"><li>Journal</li></a>
+					<a id="comp_item4" href="#Careers"><li>Careers</li></a>
+				</ul>
+			</div>
+			<div className="Support">
+				<h4>Support</h4>
+				<ul id="sup_list">
+					<a id="sup_item1" href="#FAQ"><li>FAQ</li></a>
+					<a id="sup_item2" href="#Contact_Us"><li>Contact Us</li></a>
+					<a id="sup_item3" href="#Policies"><li>Policies</li></a>
+				</ul>
+			</div>
+			<div className="studio">
+				<h4>Online Restaurant</h4>
+					<p>We are Online Restaurant we Deliver Awsome 
+					Food on your destination</p>
+			</div>
+		</ul>
+		<p className="rights">2022 Online Restaurant - All Rights Reserved</p>
 
+	</footer>
+</div>
+    );
+}
 export default Footer;
+

@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BannerImage from "../assets/dessert.jpg";
 import "../styles/Home.css";
-import Reviews from '../components/Reviews';
+ import Reviews from '../components/Reviews';
+
 
 function Home() {
   return (<>
@@ -18,7 +19,7 @@ function Home() {
       </div>
       </div>
       
-      <Reviews/>
+       <Reviews/>
       
       </>
   );
