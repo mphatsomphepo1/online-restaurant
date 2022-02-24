@@ -1,0 +1,63 @@
+.review{
+    background: url("../assets/cocktail.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+  }
+  
+  .review .heading{
+    color: black;
+    align-items: center;
+  }
+  
+  .review .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+  }
+  
+  .review .box-container .box{
+    background:#fff;
+    width:30rem;
+    margin:5rem 1rem;
+    padding:1.5rem;
+    position: relative;
+  }
+  
+  .review .box-container .box img{
+    position: absolute;
+    bottom: -7.5rem; left: -1rem;
+    height:5rem;
+    width:5rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .review .box-container .box p{
+    font-size: 1.4rem;
+    color:var(--black);
+  }
+  
+  .review .box-container .box h3{
+    text-align: end;
+    color:var(--blue);
+  }
+  
+  .review .box-container .box span{
+    text-align: end;
+    color:var(--black);
+    display: block;
+    font-size: 1.5rem;
+  }
+  
+  .review .box-container .box::before{
+    content: '';
+    position: absolute;
+    bottom: -1rem; left:.4rem;
+    height:2rem;
+    width:2rem;
+    background:#fff;
+    transform: rotate(45deg);
+  }
+  
