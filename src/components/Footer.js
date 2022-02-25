@@ -1,10 +1,17 @@
 import React from 'react';
 import '../styles/Footer.css';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {
+faFacebook,
+faInstagram,
+faWhatsapp
+} from '@fortawesome/free-brands-svg-icons';
+
 
 function Footer() {
     return (
-        <div style={{marginTop:"180px",height:"420px"}}>
-	    <footer className="footer_widget" style={{height:"420px"}}>
+        <div style={{marginTop:"0x",height:"flex"}}>
+	    <footer className="footer_widget" style={{height:"flex"}}>
 		<ul>
 			<div className="location">
 				<h4>Location</h4>
@@ -38,9 +45,16 @@ function Footer() {
 					<p>We are Online Restaurant we Deliver Awsome 
 					Food on your destination</p>
 			</div>
+			<div className="social">
+            <ul>
+                <li><a href="https://www.facebook.com/" className="Facebook"><FontAwesomeIcon icon={faFacebook} size="2x"/></a></li>
+                <li><a href="https://www.whatsapp.com/" className="whatsapp"><FontAwesomeIcon icon={faWhatsapp} size="2x"/></a></li>
+                <li><a href="https://www.instagram.com/" className="Insta"><FontAwesomeIcon icon={faInstagram} size="2x"/></a></li>
+            </ul>
+        </div>
 		</ul>
 		<p className="rights">2022 Online Restaurant - All Rights Reserved</p>
-
+		
 	</footer>
 </div>
     );

@@ -78,7 +78,8 @@
 {
 	text-align: center;
 	padding: 5px;
-	padding-top: 80px;
+	padding-top: 10px;
+	padding-left: 0%;
 }
 
 .footer_widget .location ul li:hover
@@ -101,3 +102,36 @@
     color:white;
 }
 
+
+
+a.Facebook
+{
+    color: white;    
+}
+a.whatsapp
+{
+    color: white;    
+}
+a.Insta
+{
+    color: white;    
+}
+ 
+.footer_widget .social
+{
+	
+    top:6px;
+    left:67px;
+}
+.social ul li
+{
+	margin-top: 15px;
+display:inline-block;
+padding:18px;
+
+}
+.social ul li:hover
+{
+    transform:translatey(-5px);
+    background-color:#ecdabf;
+}

@@ -25,7 +25,7 @@ function Reviews() {
 
     <div className="box" data-aos="fade-up">
         <p>Amazing development!</p>
-        <h3>JonDoe</h3>
+        <h3>Mphaben</h3>
         <span>Feb 24, 2022</span>
         <img src={Reviewer2} alt=""></img>
     </div>

@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BannerImage from "../assets/dessert.jpg";
 import Reviews from "../components/Reviews";
+import SearchForm from "../components/SearchForm";
+
 import "../styles/Home.css";
 
 
@@ -21,6 +23,8 @@ function Home() {
       </div>
       </div>
       <Reviews/>
+      <SearchForm/>
+
       </>
   );
 }
