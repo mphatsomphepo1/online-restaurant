@@ -48,7 +48,7 @@ function Footer() {
 			<div className="social">
             <ul>
                 <li><a href="https://www.facebook.com/" className="Facebook"><FontAwesomeIcon icon={faFacebook} size="2x"/></a></li>
-                <li><a href="https://www.whatsapp.com/" className="whatsapp"><FontAwesomeIcon icon={faWhatsapp} size="2x"/></a></li>
+                <li><a href="https://web.whatsapp.com/" className="whatsapp"><FontAwesomeIcon icon={faWhatsapp} size="2x"/></a></li>
                 <li><a href="https://www.instagram.com/" className="Insta"><FontAwesomeIcon icon={faInstagram} size="2x"/></a></li>
             </ul>
         </div>

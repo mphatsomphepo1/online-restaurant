@@ -24,7 +24,7 @@ function SearchForm() {
       
       return;
     }
-    navigate.push(`/search?q=${encodeURIComponent(formValue.name)}`);
+    navigate(`/search?q=${encodeURIComponent(formValue.name)}`);
   }
  
  function logout(e){
@@ -33,7 +33,7 @@ function SearchForm() {
    {
      return;
    }
-        navigate.push('/');
+        navigate('/');
   }
 
   return (

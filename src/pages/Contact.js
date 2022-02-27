@@ -1,35 +1,58 @@
-import React, { useEffect, useState, Component} from 'react'
+import React, { useState} from 'react'
 import ContactImage from "../assets/contact.jpg";
-import Axios from 'axios';
+
 import "../styles/Contact.css";
 
 
 function Contact() {
 
-  const url = "https://onlinerestaurantapi.herokuapp.com/swagger-ui.html"
-  const [customer, setCustomer] = useState({
-    fullName:"",
-    email:"",
-    message:""
-  })
+  // const url = "http://localhost:8080/api/v1/customer"
+  // const [customer, setCustomer] = useState({
+  //   fullName:"",
+  //   email:"",
+  //   message:""
+  // })
 
-  function submit(e){
-    e.preventDefault();
-    Axios.post(url ="https://onlinerestaurantapi.herokuapp.com/swagger-ui.html",{
-      fullName: customer.fullName,
-      email: customer.email,
-      message: customer.message
-    })
-    .then(res=>{
-      console.log(res.customer)
-    })
-  }
+  // function submit(e){
+  //   e.preventDefault();
+  //   Axios.post(url ="http://localhost:8080/api/v1/customer",{
+  //     fullName: customer.fullName,
+  //     email: customer.email,
+  //     message: customer.message
+  //   })
+  //   .then(res=>{
+  //     console.log(res.customer)
+  //   })
+  // }
 
-  function handle(e){
-    const newcustomer = { ...customer }
-    newcustomer[e.target.name] = e.target.value
-    setCustomer(newcustomer)
-    console.log(newcustomer)
+  // function handle(e){
+  //   const newcustomer = { ...customer }
+  //   newcustomer[e.target.name] = e.target.value
+  //   setCustomer(newcustomer)
+  //   console.log(newcustomer)
+
+  // }
+
+  const[age, setAge] = useState('')
+  const[dob, setDob] = useState('')
+  const[email, setEmail] = useState('')
+  const[id, setId] = useState('')
+  const[name, setName] = useState('') 
+
+  const handleClick=(e)=>{
+    e.preventDefault()
+    const customer ={age,dob,email,id,name}
+    console.log(customer)
+
+    fetch("http://localhost:8080/api/v1/customer",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify(customer)
+    }).then(()=>{
+      console.log("New customer contact")
+
+      })
+     
 
   }
   return (
@@ -39,15 +62,34 @@ function Contact() {
         <div className="rightSide">
             <h1> Contact Us</h1>
             <form  onSubmit={(e)=> submit(e => !e)} id="contact-from">
-                <label htmlFor="name">Full Name</label>
-                <input onChange={(e)=> handle(e)} name="fullName" value={customer.name} placeholder="Enter full name" type="text"/>
-                <label htmlFor="email">Email</label>
-                <input onChange={(e)=> handle(e)} name="email" value={customer.email} placeholder="Enter email" type="email"/>
-                <label htmlFor="message">Message</label>
-                <textarea onChange={(e)=> handle(e)} name="message" value={customer.message}rows="5" placeholder="Enter message" name="message" required>
 
-                </textarea>
-                <button type="submit"> Send Message</button>
+                <label htmlFor="age"> Enter your age</label>
+                <input name="age" placeholder="Enter your age" type="number"
+                 value={age}
+                 onChange={(e)=>setAge(e.target.value)}/>
+
+                <label htmlFor="date">Date of Birth</label>
+                <input type="text" name="input" placeholder="YYYY-MM-DD" required 
+                      pattern="(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])-(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])-(?:30))|(?:(?:0\[13578\]|1\[02\])-31))" 
+                      title="Enter a date in this format YYYY-MM-DD"
+                 value={dob}
+                 onChange={(e)=>setDob(e.target.value)}/>
+                <label htmlFor="email">Email</label>
+                <input name="email" placeholder="Enter email" type="email"
+                 value={email}
+                 onChange={(e)=>setEmail(e.target.value)}/>
+
+                 <label htmlFor="id" > Id</label>
+                 <input name="id" placeholder="Enter Id" type="id"
+                  value={id}
+                  onChange={(e)=>setId(e.target.value)}/>
+
+                <label htmlFor="name">Name</label>
+                <input name="name" placeholder="Enter name" type="name"
+                  value={name}
+                  onChange={(e)=>setName(e.target.value)}/>
+                
+                <button type="submit" onClick={handleClick}> Submit</button>
             </form>
         </div>
       
