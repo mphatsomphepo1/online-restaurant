@@ -6,33 +6,6 @@ import "../styles/Contact.css";
 
 function Contact() {
 
-  // const url = "http://localhost:8080/api/v1/customer"
-  // const [customer, setCustomer] = useState({
-  //   fullName:"",
-  //   email:"",
-  //   message:""
-  // })
-
-  // function submit(e){
-  //   e.preventDefault();
-  //   Axios.post(url ="http://localhost:8080/api/v1/customer",{
-  //     fullName: customer.fullName,
-  //     email: customer.email,
-  //     message: customer.message
-  //   })
-  //   .then(res=>{
-  //     console.log(res.customer)
-  //   })
-  // }
-
-  // function handle(e){
-  //   const newcustomer = { ...customer }
-  //   newcustomer[e.target.name] = e.target.value
-  //   setCustomer(newcustomer)
-  //   console.log(newcustomer)
-
-  // }
-
   const[age, setAge] = useState('')
   const[dob, setDob] = useState('')
   const[email, setEmail] = useState('')
@@ -44,7 +17,7 @@ function Contact() {
     const customer ={age,dob,email,id,name}
     console.log(customer)
 
-    fetch("http://localhost:8080/api/v1/customer",{
+    fetch("https://onlinerestaurantapi.herokuapp.com/api/v1/customer",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(customer)
@@ -61,7 +34,7 @@ function Contact() {
         style={{ backgroundImage: `url(${ContactImage})`}}></div>
         <div className="rightSide">
             <h1> Contact Us</h1>
-            <form  onSubmit={(e)=> submit(e => !e)} id="contact-from">
+            <form id="contact-from">
 
                 <label htmlFor="age"> Enter your age</label>
                 <input name="age" placeholder="Enter your age" type="number"

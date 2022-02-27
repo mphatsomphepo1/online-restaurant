@@ -13,7 +13,7 @@ function SignIn() {
     const menu ={menuId,info,type}
     console.log(menu)
 
-    fetch("http://localhost:8080/api/v1/menus",{
+    fetch("https://onlinerestaurantapi.herokuapp.com/api/v1/menus",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(menu)
