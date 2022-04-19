@@ -26,15 +26,7 @@ function SearchForm() {
     }
     navigate(`/search?q=${encodeURIComponent(formValue.name)}`);
   }
- 
- function logout(e){
-   e.preventDefault();
-   if(!Navigate)
-   {
-     return;
-   }
-        navigate('/');
-  }
+
 
   return (
     <>

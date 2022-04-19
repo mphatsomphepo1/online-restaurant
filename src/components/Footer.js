@@ -8,9 +8,12 @@ faWhatsapp
 } from '@fortawesome/free-brands-svg-icons';
 
 
+
 function Footer() {
     return (
+		
         <div style={{marginTop:"0x",height:"flex"}}>
+			
 	    <footer className="footer_widget" style={{height:"flex"}}>
 		<ul>
 			<div className="location">
