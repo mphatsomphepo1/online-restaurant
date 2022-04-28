@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { useNavigate, Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import '../styles/SearchForm.css';
 
 function SearchForm() {
@@ -36,7 +36,7 @@ function SearchForm() {
                     <input type="search" className="rcorners"
                             name="name"
                             placeholder="Search by name"
-                            autoComplete={"off"}
+                            autoComplete={"on"}
                             onChange={onChangeValue}/>
                   <button type="submit" className="HotelBtn2" >Search</button> 
                   </form>

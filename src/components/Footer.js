@@ -23,7 +23,7 @@ function Footer() {
 					<li>Chirunga</li>
 					<li>Kamuzu</li>
           <li>Chikanda</li>
-					<img src=""/>
+					{/* <img src=""/> */}
 				</ul>
 			</div>
 			<div className="company">
@@ -45,14 +45,14 @@ function Footer() {
 			</div>
 			<div className="studio">
 				<h4>Online Restaurant</h4>
-					<p>We are Online Restaurant we Deliver Awsome 
+					<p>We are Online Restaurant we Deliver Awesome 
 					Food on your destination</p>
 			</div>
 			<div className="social">
             <ul>
-                <li><a href="https://www.facebook.com/" className="Facebook"><FontAwesomeIcon icon={faFacebook} size="2x"/></a></li>
-                <li><a href="https://web.whatsapp.com/" className="whatsapp"><FontAwesomeIcon icon={faWhatsapp} size="2x"/></a></li>
-                <li><a href="https://www.instagram.com/" className="Insta"><FontAwesomeIcon icon={faInstagram} size="2x"/></a></li>
+                <li><a href="https://www.facebook.com/mphatso.mphepo.98" className="Facebook"><FontAwesomeIcon icon={faFacebook} size="2x"/></a></li>
+                <li><a href="https://wa.me/+265998686063/" className="whatsapp"><FontAwesomeIcon icon={faWhatsapp} size="2x"/></a></li>
+                <li><a href="https://www.instagram.com/mphamphe" className="Insta"><FontAwesomeIcon icon={faInstagram} size="2x"/></a></li>
             </ul>
         </div>
 		</ul>

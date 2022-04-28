@@ -50,9 +50,10 @@
         justify-content: center;
         align-items: center;
     }
-    .headerContainer h1, .headerContainer p {
+    /* .headerContainer h1, .headerContainer p {
 
-    }
+    } */
+
 
     .headerContainer {
         margin-left: 0px;
@@ -82,5 +83,14 @@
     .headerContainer button:hover {
         background-color: rgb(225, 225, 225);
         color: #121619;
+    }
+}
+html {
+    overflow-y: scroll;
+}
+@media screen and (min-width: 480px){
+    .home {
+        justify-content: center;
+        align-items: center;
     }
 }
